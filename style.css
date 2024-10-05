@@ -254,6 +254,11 @@ h2{
     nav .navlinks.open{
         right:0;
     }
+
+    .projectContainer{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
 }
 @media(max-width:768px)
 {
@@ -263,5 +268,9 @@ h2{
     }
     .hero-text{
         padding:40px 0px;
+    }
+    .projectContainer{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
