@@ -257,8 +257,9 @@ h2{
 
     .projectContainer{
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 1rem;
     }
+
 }
 @media(max-width:768px)
 {
@@ -273,4 +274,14 @@ h2{
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+
+    .project{
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+
 }
