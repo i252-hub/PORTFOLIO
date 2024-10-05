@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    
+                    <div class="logo-text">Kirsten M.</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                     
+                    </ul>
+                </nav>
+            </header>
+
+            <!---->
+
+            <div class = 'projectContainer'>
+                <div class = 'project one'>
+                    <img class= 'pro'src = './images/1stP.png' alt="Proj1">
+                    <h2>Bohol Airways</h2>
+                    <button class = 'view one'>View</button>
+                </div>
+                <div class = 'project two'>
+                    <img class= 'pro' src = './images/2ndP (1).png' alt="Proj2">
+                      <h2>Gigant</h2>
+                      <button class = 'view two'>View</button>
+                </div>
+                <div class = 'project three'>
+                    <img class= 'pro' src = './images/3rdp.png' alt="Proj3">
+                      <h2 class="'royal">Royal C Marketing</h2>
+                      <button class = 'view three'>View</button>
+                </div>
+                <div class = 'project four'>
+                    <img class= 'pro' src = './images/4th (1).png' alt="Proj1">
+                      <h2>Aurora Tech</h2>
+                      <button class = 'view four'>View</button>
+                </div>
+               
+               
+            </div>
+            
+        </div>
+
+       
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+        var btnOne=document.querySelector(".view.one");
+        var btnTwo=document.querySelector(".view.two");
+        var btnThree=document.querySelector(".view.three");
+        var btnFour=document.querySelector(".view.four");
+
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        btnOne.addEventListener("click", ()=>{
+            window.location.href = "https://boholairways.com";
+        });
+
+        btnTwo.addEventListener("click", ()=>{
+            window.location.href = "https://gigant.com.ph";
+        });
+
+        btnThree.addEventListener("click", ()=>{
+            window.location.href = "https://www.royalcmarketing.com/";
+        });
+
+        btnFour.addEventListener("click", ()=>{
+            window.location.href = "https://2aurora.com.ph/";
+        });
+        
+
+
+
+        document.document.querySelector('.btn.active').addEventListener('click', function() {
+            document.document.querySelector('.btn.active').click();
+        });
+     </script>
+     
+</body>
+</html>
